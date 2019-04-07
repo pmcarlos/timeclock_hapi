@@ -37,3 +37,11 @@ module.exports.save = async (input) => {
   });
 
 };
+
+module.exports.findAll = async () => {
+
+  return await Shift.findAll({
+    order: [['createdAt', 'DESC']]
+  });
+
+};

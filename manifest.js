@@ -47,6 +47,12 @@ module.exports = {
         routes: {
           prefix: '/employee'
         }
+      },
+      {
+        plugin: require('./shift'),
+        routes: {
+          prefix: '/shift'
+        }
       }
     ]
   }
