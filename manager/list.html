@@ -1,12 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>List page</title>
-</head>
-<body>
-  {{ test }}
-</body>
-</html>
+  <h1>List</h1>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Entered By</th>
+      <th>Hours</th>
+      <th></th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each hours}}
+    <tr>
+      <td>{{ this.enteredBy }}</td>
+      <td>{{ this.hours }}</td>
+      <td><button>Approve</button></td>
+      <td><button>Reject</button></td>
+    </tr>
+    {{/each}}
+    </tbody>
+  </table>

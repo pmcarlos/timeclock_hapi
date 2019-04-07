@@ -20,7 +20,9 @@ module.exports =  {
           engines: {
             html: require('handlebars')
           },
-          path: __dirname
+          path: __dirname,
+          layout: true,
+          layoutPath: 'templates/layouts'
         }
       },
       {
