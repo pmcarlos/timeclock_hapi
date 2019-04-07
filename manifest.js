@@ -23,6 +23,7 @@ module.exports = {
           path: __dirname,
           layout: true,
           layoutPath: 'templates/layouts',
+          helpersPath: 'templates/helpers',
           context: (request) => {
             return {
               credentials: request.auth.credentials

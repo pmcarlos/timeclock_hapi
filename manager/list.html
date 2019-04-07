@@ -1,6 +1,6 @@
 <h1>List</h1>
 
-<table>
+<table class="table">
   <thead>
   <tr>
     <th>Entered By</th>
@@ -13,7 +13,7 @@
   {{#each hours}}
   <tr>
     <td>{{ this.enteredBy }}</td>
-    <td>{{ this.hours }}</td>
+    <td>{{ timeWorked this.end this.start }}</td>
     <td><button>Approve</button></td>
     <td><button>Reject</button></td>
   </tr>

@@ -45,3 +45,17 @@ module.exports.findAll = async () => {
   });
 
 };
+
+module.exports.update = async (input) => {
+
+  const shift = await Shift.findOne({
+    where: {
+      id: input.id
+    }
+  });
+
+  return await shift.update({
+    state: input.state,
+    reviewedBy: input.reviewer
+  });
+};
