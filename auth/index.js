@@ -13,10 +13,10 @@ exports.register = async function (server) {
   server.auth.strategy('azure', 'bell', {
     provider: 'azuread',
     password: 'cookie_encryption_password_secure',
-    clientId: 'acaf8006-6c4a-47cf-908d-39e2dcb23250',
-    clientSecret: '832oEQJGTOFwQ5TFXIuuwQDmliAFdlphUIqfz62rR6Y=',
+    clientId: 'a6f2f7c7-662f-4de8-8466-63e4dc3ce9dc',
+    clientSecret: 'E2jaen07cWGBzJ5nMPGxs6Myc+z483996/ey4OTQUhU=',
     config: {
-      tenant: '713149d8-674d-475a-9adb-8f7dac809039'
+      tenant: 'f90a3c58-a777-489e-a4a4-226105ba5b30'
     },
     isSecure: false
   });

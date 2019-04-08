@@ -1,7 +1,7 @@
 const Sequelize = require('sequelize');
-const sequelize = new Sequelize('timeclock', 'dbuser', 'changeme', {
-  host: 'localhost',
-  port: 3307,
+const sequelize = new Sequelize('timeclock', 'timeclock', '12345678', {
+  host: 'timeclock.c2ie2hf7z3ux.us-east-1.rds.amazonaws.com',
+  port: 3306,
   dialect: 'mysql',
   operatorsAliases: false,
 
