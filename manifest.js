@@ -32,6 +32,9 @@ module.exports = {
         }
       },
       {
+        plugin: require('./logging')
+      },
+      {
         plugin: require('./auth')
       },
       {

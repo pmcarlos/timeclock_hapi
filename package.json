@@ -12,6 +12,10 @@
   "dependencies": {
     "bell": "^9.3.1",
     "glue": "^5.0.0",
+    "good": "^8.1.2",
+    "good-console": "^8.0.0",
+    "good-file": "^6.0.1",
+    "good-squeeze": "^5.1.0",
     "handlebars": "^4.0.12",
     "hapi": "^17.5.4",
     "hapi-auth-basic": "^5.0.0",
@@ -20,6 +24,7 @@
     "joi": "^13.6.0",
     "mysql2": "^1.6.5",
     "sequelize": "^4.38.1",
-    "vision": "^5.4.0"
+    "vision": "^5.4.0",
+    "white-out": "^2.0.2"
   }
 }

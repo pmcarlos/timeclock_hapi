@@ -12,6 +12,9 @@ const startServer = async function () {
     const server = await Glue.compose(manifest, options);
     await server.start();
     console.log(`server started on port ${manifest.server.port}`);
+    server.log(['success'], {
+      message: `server started on port ${manifest.server.port}`
+    });
   }
   catch (err) {
     console.error(err);
