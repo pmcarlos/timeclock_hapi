@@ -7,6 +7,7 @@ exports.register = (server) => {
     method: 'GET',
     path: '/',
     config: {
+      tags: ['api', 'webapp'],
       auth: 'session'
     },
     handler: async (request, h) => {
@@ -23,6 +24,7 @@ exports.register = (server) => {
     method: 'POST',
     path: '/',
     config: {
+      tags: ['api', 'client'],
       auth: 'simple',
       validate: {
         payload: {
@@ -54,6 +56,7 @@ exports.register = (server) => {
     method: 'POST',
     path: '/{id}/approve',
     config: {
+      tags: ['api', 'webapp'],
       auth: 'session'
     },
     handler: async (request, h) => {
@@ -71,6 +74,7 @@ exports.register = (server) => {
     method: 'POST',
     path: '/{id}/reject',
     config: {
+      tags: ['api', 'webapp'],
       auth: 'session'
     },
     handler: async (request, h) => {

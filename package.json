@@ -20,6 +20,7 @@
     "hapi": "^17.5.4",
     "hapi-auth-basic": "^5.0.0",
     "hapi-auth-cookie": "^9.0.0",
+    "hapi-swagger": "^9.4.2",
     "inert": "^5.1.0",
     "joi": "^13.6.0",
     "mysql2": "^1.6.5",

@@ -12,6 +12,20 @@ module.exports = {
   register: {
     plugins: [
       {
+        plugin: require('hapi-swagger'),
+        options: {
+          grouping: 'tags',
+          host: 'localhost:8000',
+          jsonEditor: true,
+          info: {
+            contact: {
+              email: 'pmcarlosdev@gmail.com',
+              name: 'Carlos Peña'
+            }
+          }
+        }
+      },
+      {
         plugin: require('inert')
       },
       {
