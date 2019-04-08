@@ -38,23 +38,11 @@ module.exports = {
         plugin: require('./home')
       },
       {
-        plugin: require('./manager'),
-        routes: {
-          prefix: '/manager'
-        }
-      },
-      {
-        plugin: require('./employee'),
-        routes: {
-          prefix: '/employee'
-        }
-      },
-      {
         plugin: require('./shift'),
         routes: {
           prefix: '/shift'
         }
-      }
+      },
     ]
   }
 };

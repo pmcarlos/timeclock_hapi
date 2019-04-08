@@ -18,6 +18,8 @@
     "hapi-auth-cookie": "^9.0.0",
     "inert": "^5.1.0",
     "joi": "^13.6.0",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.1",
     "vision": "^5.4.0"
   }
 }
