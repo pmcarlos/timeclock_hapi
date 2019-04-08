@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server",
+    "test": "jest",
+    "test-cov-html": "jest --coverage"
   },
   "author": "",
   "license": "ISC",
@@ -29,5 +31,8 @@
     "sequelize": "^4.38.1",
     "vision": "^5.4.0",
     "white-out": "^2.0.2"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
   }
 }
