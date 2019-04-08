@@ -1,3 +1,4 @@
+const config = require('getconfig').auth
 const service = require('./service');
 
 exports.register = async function (server) {
@@ -10,23 +11,9 @@ exports.register = async function (server) {
     validate: service.validate
   });
 
-  server.auth.strategy('azure', 'bell', {
-    provider: 'azuread',
-    password: 'cookie_encryption_password_secure',
-    clientId: 'a6f2f7c7-662f-4de8-8466-63e4dc3ce9dc',
-    clientSecret: 'E2jaen07cWGBzJ5nMPGxs6Myc+z483996/ey4OTQUhU=',
-    config: {
-      tenant: 'f90a3c58-a777-489e-a4a4-226105ba5b30'
-    },
-    isSecure: false
-  });
+  server.auth.strategy('azure', 'bell', config.azure);
 
-  server.auth.strategy('session', 'cookie', {
-    password: 'password-should-be-32-characters',
-    redirectTo: '/',
-    appendNext: true,
-    isSecure: false
-  });
+  server.auth.strategy('session', 'cookie', config.session);
 
   server.route({
     method: 'GET',

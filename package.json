@@ -11,6 +11,8 @@
   "description": "",
   "dependencies": {
     "bell": "^9.3.1",
+    "get-config": "^0.6.15",
+    "getconfig": "^4.5.0",
     "glue": "^5.0.0",
     "good": "^8.1.2",
     "good-console": "^8.0.0",
